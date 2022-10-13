@@ -17,7 +17,7 @@ pipeline {
 	      steps {
           
             dir('java-source'){
-            sh "mvn package"
+            sh "mvn -f /opt/maven compile"
           }
         }
          
